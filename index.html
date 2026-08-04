@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Daiva Pesticides | Luminary Glass</title>
+
+  <!-- Google Font & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      /* deep, luxurious background with rich opaque tones */
+      background: radial-gradient(circle at 20% 30%, #0b1b2f 0%, #020810 90%);
+      position: relative;
+      overflow-x: hidden;
+      padding: 1.8rem;
+    }
+
+    /* layered background with subtle color aura */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse at 25% 25%, rgba(45, 90, 140, 0.35) 0%, transparent 55%),
+        radial-gradient(ellipse at 75% 70%, rgba(20, 70, 40, 0.3) 0%, transparent 55%),
+        radial-gradient(circle at 50% 50%, rgba(10, 25, 55, 0.5) 0%, transparent 70%);
+      background-blend-mode: soft-light, screen, normal;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* subtle grain texture */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="2" stitchTiles="stitch"/></filter><rect width="80" height="80" filter="url(%23grain)" opacity="0.07"/></svg>');
+      opacity: 0.5;
+      mix-blend-mode: overlay;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ultimate glass panel – deep, rich, colorful */
+    .glass-panel {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      background: rgba(10, 18, 32, 0.45);
+      backdrop-filter: blur(28px) saturate(200%);
+      -webkit-backdrop-filter: blur(28px) saturate(200%);
+      padding: 3.8rem 4rem;
+      border-radius: 4rem;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      box-shadow: 
+        0 50px 100px -35px rgba(0, 0, 0, 0.8),
+        0 20px 45px -15px rgba(0, 30, 60, 0.7),
+        inset 0 1px 2px rgba(255, 255, 255, 0.3),
+        inset 0 -3px 8px rgba(0, 0, 0, 0.4);
+      max-width: 580px;
+      width: 100%;
+      transition: all 0.5s cubic-bezier(0.2, 0.9, 0.3, 1);
+    }
+
+    .glass-panel:hover {
+      border-color: rgba(255, 255, 255, 0.35);
+      box-shadow: 
+        0 60px 120px -40px rgba(0, 0, 0, 0.85),
+        0 25px 55px -18px rgba(10, 45, 80, 0.8),
+        inset 0 2px 3px rgba(255, 255, 255, 0.4);
+    }
+
+    /* ----- LOGO – unique, ultra-smooth entrance animation: floating up with chromatic aberration feel ----- */
+    .logo-wrapper {
+      margin-bottom: 2.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transform: translateY(60px) scale(0.88);
+      filter: blur(8px) brightness(1.2);
+      animation: logoLuminaryReveal 1.3s cubic-bezier(0.16, 0.9, 0.2, 1.1) 0.2s forwards;
+      /* no continuous animation; remains static after entrance */
+    }
+
+    .logo {
+      max-width: 82%;
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 28px 35px rgba(0, 0, 0, 0.6)) 
+              drop-shadow(0 10px 15px rgba(20, 45, 80, 0.5));
+      transition: filter 0.5s ease, transform 0.4s ease;
+      border-radius: 6px;
+    }
+
+    /* The unique animation: rises from below with a chromatic blur and glowing edge */
+    @keyframes logoLuminaryReveal {
+      0% {
+        opacity: 0;
+        transform: translateY(75px) scale(0.82);
+        filter: blur(14px) drop-shadow(0 35px 30px rgba(0,0,0,0.4));
+      }
+      35% {
+        opacity: 0.7;
+        transform: translateY(-8px) scale(1.03);
+        filter: blur(2px) drop-shadow(0 22px 28px rgba(20, 60, 120, 0.6));
+      }
+      65% {
+        opacity: 1;
+        transform: translateY(3px) scale(0.98);
+        filter: blur(0px) drop-shadow(0 26px 32px rgba(0,0,0,0.55));
+      }
+      85% {
+        transform: translateY(-2px) scale(1.01);
+        filter: blur(0px) drop-shadow(0 28px 34px rgba(10, 40, 90, 0.6));
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0) drop-shadow(0 28px 35px rgba(0, 0, 0, 0.6)) drop-shadow(0 10px 15px rgba(20, 45, 80, 0.5));
+      }
+    }
+
+    /* subtle hover on logo – elegant depth */
+    .logo-wrapper:hover .logo {
+      filter: drop-shadow(0 35px 45px rgba(0, 0, 0, 0.7)) 
+              drop-shadow(0 14px 22px rgba(40, 80, 140, 0.65));
+      transform: scale(1.02);
+      transition: all 0.5s ease;
+    }
+
+    /* ----- BUTTON GROUP – colorful, premium glass links with rich hues ----- */
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+      margin-top: 0.8rem;
+    }
+
+    .glass-link {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+      padding: 1.25rem 2.4rem;
+      background: rgba(18, 28, 55, 0.4);
+      backdrop-filter: blur(16px) saturate(220%);
+      -webkit-backdrop-filter: blur(16px) saturate(220%);
+      color: rgba(255, 255, 255, 0.95);
+      text-decoration: none;
+      font-size: 1.08rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      border-radius: 60px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 14px 32px -14px rgba(0, 0, 0, 0.55), 
+                  inset 0 1px 2px rgba(255, 255, 255, 0.3);
+      transition: all 0.45s cubic-bezier(0.2, 0.9, 0.25, 1.05);
+      
+      /* initial hidden – revealed after logo (1.5s delay total) */
+      opacity: 0;
+      transform: translateY(30px);
+      filter: blur(6px);
+    }
+
+    /* colorful link variants */
+    .glass-link.primary {
+      background: linear-gradient(135deg, rgba(25, 45, 95, 0.55) 0%, rgba(18, 32, 75, 0.5) 100%);
+      border-color: rgba(140, 180, 255, 0.35);
+      box-shadow: 0 14px 30px -12px rgba(20, 60, 140, 0.4), inset 0 1px 2px rgba(255,255,255,0.3);
+    }
+
+    .glass-link.secondary {
+      background: linear-gradient(135deg, rgba(45, 85, 45, 0.5) 0%, rgba(30, 65, 35, 0.5) 100%);
+      border-color: rgba(160, 210, 120, 0.35);
+      box-shadow: 0 14px 30px -12px rgba(40, 110, 60, 0.4), inset 0 1px 2px rgba(255,255,255,0.25);
+    }
+
+    /* icons with color */
+    .glass-link i {
+      font-size: 1.25rem;
+      transition: transform 0.4s ease, color 0.3s;
+      color: rgba(210, 230, 255, 0.95);
+      filter: drop-shadow(0 2px 5px rgba(0,0,0,0.4));
+    }
+
+    .glass-link.primary i {
+      color: #b8d0ff;
+    }
+    .glass-link.secondary i {
+      color: #c3e3a5;
+    }
+
+    /* hover – deeper color, smooth morph */
+    .glass-link:hover {
+      background: rgba(22, 38, 75, 0.6);
+      backdrop-filter: blur(22px) saturate(240%);
+      -webkit-backdrop-filter: blur(22px) saturate(240%);
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 28px 45px -20px rgba(0, 0, 0, 0.7), 
+                  inset 0 2px 3px rgba(255, 255, 255, 0.45);
+      border-color: rgba(255, 255, 255, 0.5);
+      color: white;
+    }
+
+    .glass-link.primary:hover {
+      background: linear-gradient(135deg, rgba(35, 60, 120, 0.65) 0%, rgba(22, 42, 95, 0.6) 100%);
+      border-color: rgba(180, 210, 255, 0.6);
+    }
+
+    .glass-link.secondary:hover {
+      background: linear-gradient(135deg, rgba(60, 110, 55, 0.65) 0%, rgba(40, 85, 45, 0.6) 100%);
+      border-color: rgba(190, 240, 140, 0.6);
+    }
+
+    .glass-link:hover i {
+      transform: translateX(5px) scale(1.08);
+      color: white;
+    }
+
+    /* elegant arrow */
+    .glass-link::after {
+      content: '→';
+      position: absolute;
+      right: 2.2rem;
+      opacity: 0;
+      transform: translateX(-12px);
+      transition: all 0.4s cubic-bezier(0.2, 0.9, 0.25, 1.05);
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.85);
+      text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+    }
+
+    .glass-link:hover {
+      padding-right: 4.5rem;
+      padding-left: 2.2rem;
+    }
+    .glass-link:hover::after {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+
+    /* staggered glass reveal – after 1.5 seconds (logo animation ends ~1.5s) */
+    .glass-link:nth-child(1) {
+      animation: glassLinkReveal 0.95s cubic-bezier(0.2, 0.9, 0.25, 1.05) 1.55s forwards;
+    }
+    .glass-link:nth-child(2) {
+      animation: glassLinkReveal 0.95s cubic-bezier(0.2, 0.9, 0.25, 1.05) 1.8s forwards;
+    }
+
+    @keyframes glassLinkReveal {
+      0% {
+        opacity: 0;
+        transform: translateY(34px) scale(0.92);
+        filter: blur(8px);
+      }
+      55% {
+        opacity: 0.9;
+        transform: translateY(-4px) scale(1.02);
+        filter: blur(1px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+      }
+    }
+
+    /* ----- RESPONSIVE (premium on every screen) ----- */
+    @media (max-width: 600px) {
+      .glass-panel {
+        padding: 2.8rem 2.2rem;
+        border-radius: 3rem;
+        max-width: 460px;
+      }
+      .logo {
+        max-width: 76%;
+      }
+      .glass-link {
+        font-size: 0.98rem;
+        padding: 1.1rem 2rem;
+        gap: 12px;
+      }
+      .glass-link i {
+        font-size: 1.15rem;
+      }
+      .glass-link:hover {
+        padding-right: 4rem;
+        padding-left: 1.9rem;
+      }
+      .glass-link::after {
+        right: 1.6rem;
+        font-size: 1.25rem;
+      }
+    }
+
+    @media (max-width: 460px) {
+      .glass-panel {
+        padding: 2.2rem 1.4rem;
+        border-radius: 2.4rem;
+      }
+      .logo {
+        max-width: 70%;
+      }
+      .glass-link {
+        font-size: 0.9rem;
+        padding: 0.95rem 1.6rem;
+        gap: 10px;
+        border-radius: 50px;
+      }
+      .glass-link i {
+        font-size: 1.05rem;
+      }
+      .glass-link:hover {
+        padding-right: 3.5rem;
+        padding-left: 1.5rem;
+      }
+      .glass-link::after {
+        right: 1.3rem;
+        font-size: 1.15rem;
+      }
+      .logo-wrapper {
+        margin-bottom: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-panel">
+    <!-- Logo with unique, smooth one-time animation: rises from below with chromatic blur -->
+    <div class="logo-wrapper">
+      <img src="logo.png" alt="Daiva Pesticides" class="logo" />
+    </div>
+
+    <!-- Colorful premium glass links, appear after logo animation -->
+    <div class="button-group">
+      <a href="https://smyvisiontechnologies.com" class="glass-link primary">
+        <i class="fas fa-seedling"></i> Learn more about us
+      </a>
+      <a href="https://smyvisiontechnologies.com" class="glass-link secondary">
+        <i class="fas fa-flask"></i> View our products
+      </a>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      // No continuous logo animation – only the entrance defined in CSS.
+      // Glass links are revealed after 1.55s and 1.8s respectively.
+      
+      // Additional subtle interactive depth for glass panel (premium feel)
+      const panel = document.querySelector('.glass-panel');
+      if (panel && window.matchMedia('(pointer: fine)').matches) {
+        panel.addEventListener('mousemove', (e) => {
+          const rect = panel.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          const rotateX = ((y - centerY) / centerY) * 1.4;
+          const rotateY = ((x - centerX) / centerX) * 1.4;
+          panel.style.transition = 'transform 0.25s ease-out';
+          panel.style.transform = `perspective(1400px) rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+        panel.addEventListener('mouseleave', () => {
+          panel.style.transition = 'transform 0.6s cubic-bezier(0.2, 0.9, 0.3, 1)';
+          panel.style.transform = 'perspective(1400px) rotateX(0deg) rotateY(0deg)';
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
