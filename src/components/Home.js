@@ -118,6 +118,7 @@ function Home() {
     setImageSources(
       slides.map((slide) => slide.localImage)
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   /* AUTO CAROUSEL */
@@ -142,6 +143,7 @@ function Home() {
 
       image.src = slide.fallbackImage;
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   /* SCROLL ANIMATIONS */
@@ -196,6 +198,140 @@ function Home() {
 
   return (
     <>
+      {/* ==========================================
+          SEO STRUCTURED DATA - ORGANIZATION
+      ========================================== */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Daiva Pesticides",
+          "url": "https://www.daivapesticides.com/",
+          "logo": "https://www.daivapesticides.com/assets/desk.png",
+          "description": "Daiva Pesticides is a leading agricultural solutions company in Karnataka, India providing innovative crop protection products, pesticides, insecticides, fungicides and farming solutions for sustainable agriculture.",
+          "slogan": "Protecting Crops, Enriching Lives",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Karnataka",
+            "addressRegion": "Karnataka",
+            "addressCountry": "IN"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-8277650250",
+            "contactType": "customer service",
+            "availableLanguage": ["English", "Kannada", "Hindi"],
+            "areaServed": "Karnataka"
+          },
+          "sameAs": [
+            "https://www.facebook.com/share/18Eoe3afBa/",
+            "https://www.instagram.com/daiva_pesticides?igsh=bnZqaHFjNHk2ZTE3",
+            "https://youtube.com/@daivapesticides?si=Hjp0mSGb50kDIlde"
+          ]
+        })}
+      </script>
+
+      {/* ==========================================
+          SEO STRUCTURED DATA - LOCAL BUSINESS GEO
+      ========================================== */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Daiva Pesticides",
+          "url": "https://www.daivapesticides.com/",
+          "image": "https://www.daivapesticides.com/assets/desk.png",
+          "description": "Daiva Pesticides provides crop protection solutions, agricultural pesticides, insecticides, fungicides and farming products for farmers across Karnataka, India. Trusted agricultural partner for better harvests.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Karnataka",
+            "addressRegion": "Karnataka",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "15.3173",
+            "longitude": "75.7139"
+          },
+          "telephone": "+91-8277650250",
+          "openingHours": "Mo-Sa 09:00-18:00",
+          "priceRange": "$$",
+          "areaServed": "Karnataka",
+          "sameAs": [
+            "https://www.facebook.com/share/18Eoe3afBa/",
+            "https://www.instagram.com/daiva_pesticides?igsh=bnZqaHFjNHk2ZTE3",
+            "https://youtube.com/@daivapesticides?si=Hjp0mSGb50kDIlde"
+          ]
+        })}
+      </script>
+
+      {/* ==========================================
+          SEO STRUCTURED DATA - WEBSITE
+      ========================================== */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Daiva Pesticides",
+          "url": "https://www.daivapesticides.com/",
+          "description": "Innovative crop protection and agricultural solutions for farmers in Karnataka, India. Quality pesticides, insecticides, fungicides and farming products.",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.daivapesticides.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        })}
+      </script>
+
+      {/* ==========================================
+          HIDDEN SEO CONTENT - NOT VISIBLE TO USERS
+          BUT READABLE BY GOOGLE AND AI CRAWLERS
+      ========================================== */}
+      <div
+        style={{
+          position: "absolute",
+          left: "-9999px",
+          top: "auto",
+          width: "1px",
+          height: "1px",
+          overflow: "hidden",
+          opacity: 0,
+          pointerEvents: "none",
+          ariaHidden: "true",
+          tabIndex: "-1",
+        }}
+      >
+        <h2>Daiva Pesticides - Crop Protection Solutions in Karnataka</h2>
+        <h3>Agricultural Pesticides, Insecticides and Fungicides</h3>
+        <p>
+          Daiva Pesticides is a trusted provider of agricultural solutions in Karnataka, India. 
+          We offer high-quality crop protection products, pesticides, insecticides, fungicides, 
+          herbicides and plant growth regulators for farmers across Karnataka.
+        </p>
+        <p>
+          Our agricultural solutions help farmers protect crops from pests, diseases and weeds, 
+          ensuring healthier plants and better harvests. We serve agricultural communities in 
+          Bangalore, Mysore, Hubli, Belgaum, Mangalore, Shimoga, Davangere, Bellary, Tumkur, 
+          Hassan, Mandya, Raichur, Gulbarga, Bidar, Bijapur and all districts of Karnataka.
+        </p>
+        <p>
+          Contact Daiva Pesticides at +91-8277650250 for crop protection products, agricultural 
+          pesticides, farming solutions and dealer opportunities in Karnataka.
+        </p>
+        <ul>
+          <li>Crop Protection Products in Karnataka</li>
+          <li>Agricultural Pesticides Suppliers</li>
+          <li>Insecticides for Farmers</li>
+          <li>Fungicides for Crop Protection</li>
+          <li>Herbicides and Weed Control</li>
+          <li>Plant Growth Regulators</li>
+          <li>Farming Solutions in Karnataka</li>
+          <li>Agricultural Products Distributor</li>
+          <li>Pesticide Dealer Opportunities</li>
+          <li>Best Agricultural Company in Karnataka</li>
+        </ul>
+      </div>
+
       <style>{`
 
         * {

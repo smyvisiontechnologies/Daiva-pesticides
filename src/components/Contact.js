@@ -117,6 +117,122 @@ function Contact() {
 
   return (
     <>
+      {/* ==========================================
+          SEO STRUCTURED DATA - CONTACT PAGE
+      ========================================== */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Contact Daiva Pesticides - Agricultural Solutions in Karnataka",
+          "url": "https://www.daivapesticides.com/contact",
+          "description": "Contact Daiva Pesticides for agricultural products, crop protection solutions, dealership opportunities and farming support in Karnataka. Call +91-8277650250 or WhatsApp us.",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "Daiva Pesticides",
+            "url": "https://www.daivapesticides.com/",
+            "telephone": "+91-8277650250",
+            "email": "daivapesticides@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Karnataka",
+              "addressRegion": "Karnataka",
+              "addressCountry": "IN"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+91-8277650250",
+                "contactType": "customer service",
+                "availableLanguage": ["English", "Kannada", "Hindi"]
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+91-8277650250",
+                "contactType": "sales",
+                "availableLanguage": ["English", "Kannada", "Hindi"]
+              }
+            ],
+            "sameAs": [
+              "https://www.facebook.com/share/18Eoe3afBa/",
+              "https://www.instagram.com/daiva_pesticides?igsh=bnZqaHFjNHk2ZTE3",
+              "https://youtube.com/@daivapesticides?si=Hjp0mSGb50kDIlde"
+            ]
+          }
+        })}
+      </script>
+
+      {/* ==========================================
+          SEO STRUCTURED DATA - BREADCRUMB
+      ========================================== */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.daivapesticides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Contact Us",
+              "item": "https://www.daivapesticides.com/contact"
+            }
+          ]
+        })}
+      </script>
+
+      {/* ==========================================
+          HIDDEN SEO CONTENT - NOT VISIBLE TO USERS
+          BUT READABLE BY GOOGLE AND AI CRAWLERS
+      ========================================== */}
+      <div
+        style={{
+          position: "absolute",
+          left: "-9999px",
+          top: "auto",
+          width: "1px",
+          height: "1px",
+          overflow: "hidden",
+          opacity: 0,
+          pointerEvents: "none",
+          ariaHidden: "true",
+          tabIndex: "-1",
+        }}
+      >
+        <h2>Contact Daiva Pesticides - Agricultural Solutions in Karnataka</h2>
+        <h3>Call +91-8277650250 for Crop Protection Products and Farming Solutions</h3>
+        <p>
+          Contact Daiva Pesticides for agricultural products, crop protection solutions, 
+          pesticides, insecticides, fungicides and farming support in Karnataka, India.
+        </p>
+        <p>
+          Our team is available Monday to Saturday, 9 AM to 6 PM IST. Call us at 
+          +91-8277650250 or WhatsApp us for product enquiries, dealership opportunities, 
+          farmer support and agricultural solutions in Karnataka.
+        </p>
+        <p>
+          Email: daivapesticides@gmail.com
+        </p>
+        <p>
+          Serving farmers and dealers across Bangalore, Mysore, Hubli, Belgaum, Mangalore, 
+          Shimoga, Davangere, Bellary, Tumkur, Hassan, Mandya and all districts of Karnataka.
+        </p>
+        <ul>
+          <li>Contact Daiva Pesticides Karnataka</li>
+          <li>Agricultural Products Enquiry</li>
+          <li>Crop Protection Solutions Contact</li>
+          <li>Pesticides Dealer Enquiry Karnataka</li>
+          <li>Farming Support Contact Number</li>
+          <li>WhatsApp Agricultural Products</li>
+          <li>Best Pesticides Company Contact</li>
+        </ul>
+      </div>
+
       <style>{`
         * {
           box-sizing: border-box;

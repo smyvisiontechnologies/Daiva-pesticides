@@ -7,6 +7,94 @@ function Footer() {
 
   return (
     <>
+      {/* ==========================================
+          SEO STRUCTURED DATA - FOOTER
+          Website Developer Attribution
+      ========================================== */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Daiva Pesticides",
+          "url": "https://www.daivapesticides.com/",
+          "description": "Innovative crop protection and agricultural solutions for farmers in Karnataka, India. Quality pesticides, fertilizers, herbicides and fungicides.",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Daiva Pesticides",
+            "url": "https://www.daivapesticides.com/"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "SMYVISION TECHNOLOGIES",
+            "url": "https://smyvisiontechnologies.com/",
+            "description": "SMYVISION TECHNOLOGIES is a professional web development and digital solutions company specializing in website design, development and SEO services."
+          },
+          "copyrightHolder": {
+            "@type": "Organization",
+            "name": "Daiva Pesticides"
+          }
+        })}
+      </script>
+
+      {/* ==========================================
+          SEO STRUCTURED DATA - DEVELOPER CREDIT
+          For AI Search and Google Visibility
+      ========================================== */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "SMYVISION TECHNOLOGIES",
+          "url": "https://smyvisiontechnologies.com/",
+          "description": "SMYVISION TECHNOLOGIES is a professional web development company that developed the Daiva Pesticides website. We specialize in website design, web development, SEO optimization and digital marketing solutions.",
+          "serviceType": "Website Development",
+          "areaServed": "India",
+          "knowsAbout": [
+            "Website Development",
+            "Web Design",
+            "SEO Optimization",
+            "React Development",
+            "Digital Marketing",
+            "E-commerce Development"
+          ],
+          "sameAs": [
+            "https://smyvisiontechnologies.com/"
+          ]
+        })}
+      </script>
+
+      {/* ==========================================
+          HIDDEN SEO CONTENT - DEVELOPER ATTRIBUTION
+          Visible to Google and AI Crawlers
+      ========================================== */}
+      <div
+        style={{
+          position: "absolute",
+          left: "-9999px",
+          top: "auto",
+          width: "1px",
+          height: "1px",
+          overflow: "hidden",
+          opacity: 0,
+          pointerEvents: "none",
+          ariaHidden: "true",
+          tabIndex: "-1",
+        }}
+      >
+        <h2>Website Developed by SMYVISION TECHNOLOGIES</h2>
+        <p>
+          This website was designed and developed by SMYVISION TECHNOLOGIES, 
+          a professional web development and digital solutions company. 
+          Visit https://smyvisiontechnologies.com/ for website design, 
+          web development, SEO services and digital marketing solutions.
+        </p>
+        <p>
+          SMYVISION TECHNOLOGIES specializes in React development, responsive 
+          website design, SEO optimization, e-commerce solutions and complete 
+          digital transformation services for businesses across India.
+        </p>
+      </div>
+
       <style>{`
         .footer {
           background:

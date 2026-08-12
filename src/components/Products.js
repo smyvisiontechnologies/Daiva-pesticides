@@ -6,173 +6,226 @@ function Products() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   
   const products = [
-    // WATER SOLUBLE FERTILIZERS
-    {
-      id: 1,
-      name: "NPK 00:52:34",
-      type: "100% Water Soluble Fertilizer",
-      category: "Fertilizers",
-      subCategory: "Water Soluble Fertilizers",
-      image: "/assets/pro1.png",
-      description:
-        "A high-quality water soluble fertilizer designed to support flowering, fruit development and stronger crop performance.",
-    },
-    {
-      id: 2,
-      name: "NPK 00:00:50",
-      type: "100% Water Soluble Fertilizer",
-      category: "Fertilizers",
-      subCategory: "Water Soluble Fertilizers",
-      image: "/assets/pro2.png",
-      description:
-        "A potassium-rich water soluble fertilizer formulated to support crop quality, maturity and better plant strength.",
-    },
-    {
-      id: 3,
-      name: "Nitro Cal + B",
-      type: "100% Water Soluble Fertilizer",
-      category: "Fertilizers",
-      subCategory: "Water Soluble Fertilizers",
-      image: "/assets/pro3.png",
-      description:
-        "A calcium and boron based formulation designed to support plant development, fruit quality and stronger crop growth.",
-    },
-    {
-      id: 4,
-      name: "Nitro Cal",
-      type: "100% Water Soluble Fertilizer",
-      category: "Fertilizers",
-      subCategory: "Water Soluble Fertilizers",
-      image: "/assets/pro4.png",
-      description:
-        "A crop nutrition solution developed to support calcium requirements and encourage healthier plant development.",
-    },
-    {
-      id: 5,
-      name: "NPK 00:37:37+ TE",
-      type: "100% Water Soluble Fertilizer",
-      category: "Fertilizers",
-      subCategory: "Water Soluble Fertilizers",
-      image: "/assets/pro5.png",
-      description:
-        "A mycorrhizal bio fertilizer designed to support root development, nutrient uptake and healthier crop establishment.",
-    },
-    {
-      id: 6,
-      name: "NPK 13:00:45",
-      type: "100% Water Soluble Fertilizer",
-      category: "Fertilizers",
-      subCategory: "Water Soluble Fertilizers",
-      image: "/assets/pro6.png",
-      description:
-        "A balanced plant nutrition solution developed to support crop vitality, plant development and productive growth.",
-    },
-    {
-      id: 7,
-      name: "NPK 13:14:13",
-      type: "100% Water Soluble Fertilizer",
-      category: "Fertilizers",
-      subCategory: "Water Soluble Fertilizers",
-      image: "/assets/pro7.png",
-      description:
-        "A balanced plant nutrition solution developed to support crop vitality, plant development and productive growth.",
-    },
-    {
-      id: 8,
-      name: "NPK 19:19:19",
-      type: "100% Water Soluble Fertilizer",
-      category: "Fertilizers",
-      subCategory: "Water Soluble Fertilizers",
-      image: "/assets/pro8.png",
-      description:
-        "A balanced plant nutrition solution developed to support crop vitality, plant development and productive growth.",
-    },
-    {
-      id: 9,
-      name: "NPK 20:20:20",
-      type: "100% Water Soluble Fertilizer",
-      category: "Fertilizers",
-      subCategory: "Water Soluble Fertilizers",
-      image: "/assets/pro9.png",
-      description:
-        "A balanced plant nutrition solution developed to support crop vitality, plant development and productive growth.",
-    },
-    {
-      id: 10,
-      name: "Microly",
-      type: "100% Water Soluble Nutrient Granules(20kg)",
-      category: "Fertilizers",
-      subCategory: "Water Soluble Fertilizers",
-      image: "/assets/pro10.png",
-      description:
-        "A balanced plant nutrition solution developed to support crop vitality, plant development and productive growth.",
-    },
-    {
-      id: 11,
-      name: "Grade-|",
-      type: "100% Water Soluble Fertilizer",
-      category: "Fertilizers",
-      subCategory: "Water Soluble Fertilizers",
-      image: "/assets/pro11.png",
-      description:
-        "A balanced plant nutrition solution developed to support crop vitality, plant development and productive growth.",
-    },
-    {
-      id: 12,
-      name: "Grade-||",
-      type: "100% Water Soluble Fertilizer",
-      category: "Fertilizers",
-      subCategory: "Water Soluble Fertilizers",
-      image: "/assets/pro12.png",
-      description:
-        "A balanced plant nutrition solution developed to support crop vitality, plant development and productive growth.",
-    },
-    {
-      id: 13,
-      name: "K-Set",
-      type: "100% Water Soluble Fertilizer",
-      category: "Fertilizers",
-      subCategory: "Water Soluble Fertilizers",
-      image: "/assets/pro13.png",
-      description:
-        "A balanced plant nutrition solution developed to support crop vitality, plant development and productive growth.",
-    },
-    // HERBICIDES
-    {
-      id: 14,
-      name: "QuiZon 10",
-      type: "Quizalofop Ethyl 10% EC Herbicide",
-      category: "Herbicides",
-      subCategory: null,
-      image: "/assets/pro14.png",
-      description:
-        "A selective herbicide for effective control of annual and perennial grasses in broadleaf crops.",
-    },
-    {
-      id: 15,
-      name: "ATRAX",
-      type: "Atrazine 50% W.P Herbicide",
-      category: "Herbicides",
-      subCategory: null,
-      image: "/assets/pro15.png",
-      description:
-        "A broad-spectrum herbicide for pre and post-emergence control of weeds in maize and sugarcane crops.",
-    },
-    // FUNGICIDES
-    {
-      id: 16,
-      name: "TEBSUL",
-      type: "Tebuconazole 10% + Sulphur 65% WG",
-      category: "Fungicides",
-      subCategory: null,
-      image: "/assets/pro16.png",
-      description:
-        "A systemic fungicide with contact action for broad-spectrum disease control in various crops.",
-    },
-  ];
+  // WATER SOLUBLE FERTILIZERS
+  {
+    id: 1,
+    name: "NPK 00:52:34",
+    type: "100% Water Soluble Fertilizer",
+    category: "Fertilizers",
+    subCategory: "Water Soluble Fertilizers",
+    image: "/assets/pro1.webp",
+    description:
+      "A high-phosphorus and potassium fertilizer that supports strong root development, flowering, fruit setting and improved crop productivity.",
+  },
+  {
+    id: 2,
+    name: "NPK 00:00:50",
+    type: "100% Water Soluble Fertilizer",
+    category: "Fertilizers",
+    subCategory: "Water Soluble Fertilizers",
+    image: "/assets/pro2.webp",
+    description:
+      "A high-potassium fertilizer that supports fruit development, crop quality, maturity, plant strength and improved tolerance to environmental stress.",
+  },
+  {
+    id: 3,
+    name: "Nitro Cal + B",
+    type: "100% Water Soluble Fertilizer",
+    category: "Fertilizers",
+    subCategory: "Water Soluble Fertilizers",
+    image: "/assets/pro3.webp",
+    description:
+      "A calcium and boron based fertilizer that supports healthy plant development, flowering, fruit setting, fruit quality and stronger crop growth.",
+  },
+  {
+    id: 4,
+    name: "Nitro Cal",
+    type: "100% Water Soluble Fertilizer",
+    category: "Fertilizers",
+    subCategory: "Water Soluble Fertilizers",
+    image: "/assets/pro4.webp",
+    description:
+      "A calcium-based fertilizer that supports strong cell structure, healthy plant growth, fruit quality and better overall crop development.",
+  },
+  {
+    id: 5,
+    name: "NPK 00:37:37+ TE",
+    type: "100% Water Soluble Fertilizer",
+    category: "Fertilizers",
+    subCategory: "Water Soluble Fertilizers",
+    image: "/assets/pro5.webp",
+    description:
+      "A phosphorus and potassium rich fertilizer with trace elements that supports flowering, fruit setting, crop development and improved produce quality.",
+  },
+  {
+    id: 6,
+    name: "NPK 13:00:45",
+    type: "100% Water Soluble Fertilizer",
+    category: "Fertilizers",
+    subCategory: "Water Soluble Fertilizers",
+    image: "/assets/pro6.webp",
+    description:
+      "A nitrogen and potassium rich fertilizer that supports vegetative growth, plant vigor, fruit development and improved crop quality.",
+  },
+  {
+    id: 7,
+    name: "NPK 13:14:13",
+    type: "100% Water Soluble Fertilizer",
+    category: "Fertilizers",
+    subCategory: "Water Soluble Fertilizers",
+    image: "/assets/pro7.webp",
+    description:
+      "A balanced NPK fertilizer that provides essential nutrients to support root development, plant growth, flowering and overall crop performance.",
+  },
+  {
+    id: 8,
+    name: "NPK 19:19:19",
+    type: "100% Water Soluble Fertilizer",
+    category: "Fertilizers",
+    subCategory: "Water Soluble Fertilizers",
+    image: "/assets/pro8.webp",
+    description:
+      "A balanced water soluble fertilizer supplying equal proportions of nitrogen, phosphorus and potassium for healthy foliage, strong roots and productive crop growth.",
+  },
+  {
+    id: 9,
+    name: "NPK 20:20:20",
+    type: "100% Water Soluble Fertilizer",
+    category: "Fertilizers",
+    subCategory: "Water Soluble Fertilizers",
+    image: "/assets/pro9.webp",
+    description:
+      "A balanced NPK fertilizer that provides essential nutrients throughout crop growth, supporting healthy foliage, root development, plant vigor and productivity.",
+  },
+  {
+    id: 10,
+    name: "Microly",
+    type: "100% Water Soluble Nutrient Granules(20kg)",
+    category: "Fertilizers",
+    subCategory: "Water Soluble Fertilizers",
+    image: "/assets/pro10.webp",
+    description:
+      "Water soluble nutrient granules designed to provide essential micronutrients, support healthy plant growth, improve nutrient uptake and help maintain crop quality.",
+  },
+  {
+    id: 11,
+    name: "Grade-|",
+    type: "100% Water Soluble Fertilizer",
+    category: "Fertilizers",
+    subCategory: "Water Soluble Fertilizers",
+    image: "/assets/pro11.webp",
+    description:
+      "A water soluble fertilizer formulated to provide essential crop nutrients and support healthy plant growth, nutrient uptake and improved crop performance.",
+  },
+  {
+    id: 12,
+    name: "Grade-||",
+    type: "100% Water Soluble Fertilizer",
+    category: "Fertilizers",
+    subCategory: "Water Soluble Fertilizers",
+    image: "/assets/pro12.webp",
+    description:
+      "A specialized water soluble fertilizer designed to support balanced crop nutrition, healthy plant development, strong growth and improved crop performance.",
+  },
+  {
+    id: 13,
+    name: "K-Set",
+    type: "100% Water Soluble Fertilizer",
+    category: "Fertilizers",
+    subCategory: "Water Soluble Fertilizers",
+    image: "/assets/pro13.webp",
+    description:
+      "A potassium-focused fertilizer that supports plant strength, fruit development, crop quality, improved maturity and better tolerance to environmental stress.",
+  },
 
+  // HERBICIDES
+  {
+    id: 14,
+    name: "QuiZon 10",
+    type: "Quizalofop Ethyl 10% EC Herbicide",
+    category: "Herbicides",
+    subCategory: null,
+    image: "/assets/pro14.webp",
+    description:
+      "A selective herbicide designed to control annual and perennial grass weeds in suitable broadleaf crops while allowing the crop to continue healthy growth.",
+  },
+  {
+    id: 15,
+    name: "ATRAX",
+    type: "Atrazine 50% W.P Herbicide",
+    category: "Herbicides",
+    subCategory: null,
+    image: "/assets/pro15.webp",
+    description:
+      "A selective herbicide formulated for effective pre-emergence and early post-emergence control of various weeds in crops such as maize and sugarcane.",
+  },
+  {
+    id: 16,
+    name: "Dyler",
+    type: "Topramezone 336 g/l (w/v) SC Selective Herbicide",
+    category: "Herbicides",
+    subCategory: null,
+    image: "/assets/pro19.webp",
+    description:
+      "A selective herbicide containing Topramezone designed for effective post-emergence control of grass and broadleaf weeds, particularly in maize crops.",
+  },
+
+  // FUNGICIDES
+  {
+    id: 17,
+    name: "TEBSUL",
+    type: "Tebuconazole 10% + Sulphur 65% WG",
+    category: "Fungicides",
+    subCategory: null,
+    image: "/assets/pro16.webp",
+    description:
+      "A combination fungicide providing systemic and contact protection against a broad range of fungal diseases and helping maintain healthy crop growth.",
+  },
+  {
+    id: 18,
+    name: "Motive",
+    type: "Carbendazim 12% + Mancozeb 63% WG",
+    category: "Fungicides",
+    subCategory: null,
+    image: "/assets/pro17.webp",
+    description:
+      "A combination fungicide offering systemic and contact action for effective management of a broad range of fungal diseases and protection of crop foliage.",
+  },
+
+  // PESTICIDES
+  {
+    id: 19,
+    name: "PDM",
+    type: "Potash Derived from Molasses",
+    category: "Pesticides",
+    subCategory: null,
+    image: "/assets/pro18.webp",
+    description:
+      "A potassium-rich agricultural input derived from molasses that supports plant growth, improves crop quality, strengthens plant tissues and enhances overall crop performance.",
+  },
+  {
+    id: 20,
+    name: "PROM",
+    type: "Phosphate rich organic manure",
+    category: "Pesticides",
+    subCategory: null,
+    image: "/assets/pro20.webp",
+    description:
+      "A phosphate-rich organic manure that helps improve soil fertility, supports healthy root development, enhances nutrient availability and promotes vigorous crop growth.",
+  },
+  {
+    id: 21,
+    name: "CMS",
+    type: "Granulated Soil Conditioner",
+    category: "Pesticides",
+    subCategory: null,
+    image: "/assets/pro21.webp",
+    description:
+      "A granulated soil conditioner designed to improve soil structure, enhance nutrient availability and moisture management, and create better conditions for healthy root growth.",
+  },
+];
   // Get unique categories
-  const categories = ["All", "Fertilizers", "Water Soluble Fertilizers", "Herbicides", "Fungicides", "Insecticides", "Bio-logicals"];
+  const categories = ["All", "Fertilizers", "Water Soluble Fertilizers", "Herbicides", "Fungicides", "Pesticides"];
 
   // Filter products based on selected category
   const filteredProducts = selectedCategory === "All" 
@@ -210,6 +263,103 @@ function Products() {
 
   return (
     <>
+      {/* ==========================================
+          SEO STRUCTURED DATA - PRODUCTS PAGE
+      ========================================== */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Agricultural Products - Fertilizers, Herbicides, Fungicides | Daiva Pesticides",
+          "url": "https://www.daivapesticides.com/products",
+          "description": "Explore Daiva Pesticides agricultural products including water soluble fertilizers, NPK fertilizers, herbicides, fungicides and pesticides for better crop nutrition and protection in Karnataka, India.",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.daivapesticides.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Products",
+                "item": "https://www.daivapesticides.com/products"
+              }
+            ]
+          }
+        })}
+      </script>
+
+      {/* ==========================================
+          SEO STRUCTURED DATA - ITEM LIST
+      ========================================== */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "name": "Daiva Pesticides Agricultural Products",
+          "url": "https://www.daivapesticides.com/products",
+          "numberOfItems": products.length,
+          "itemListElement": products.map((product, index) => ({
+            "@type": "Product",
+            "position": index + 1,
+            "name": product.name,
+            "description": product.description,
+            "category": product.category,
+            "image": `https://www.daivapesticides.com${product.image}`,
+            "brand": {
+              "@type": "Brand",
+              "name": "Daiva Pesticides"
+            }
+          }))
+        })}
+      </script>
+
+      {/* ==========================================
+          HIDDEN SEO CONTENT - NOT VISIBLE TO USERS
+          BUT READABLE BY GOOGLE AND AI CRAWLERS
+      ========================================== */}
+      <div
+        style={{
+          position: "absolute",
+          left: "-9999px",
+          top: "auto",
+          width: "1px",
+          height: "1px",
+          overflow: "hidden",
+          opacity: 0,
+          pointerEvents: "none",
+          ariaHidden: "true",
+          tabIndex: "-1",
+        }}
+      >
+        <h2>Agricultural Products in Karnataka - Daiva Pesticides</h2>
+        <h3>Water Soluble Fertilizers, Herbicides, Fungicides and Pesticides</h3>
+        <p>
+          Daiva Pesticides offers a wide range of agricultural products in Karnataka, India including 
+          NPK water soluble fertilizers, calcium fertilizers, potassium fertilizers, herbicides, 
+          fungicides and soil conditioners for better crop nutrition and protection.
+        </p>
+        <p>
+          Our products include NPK 19:19:19, NPK 20:20:20, NPK 00:52:34, Nitro Cal, K-Set, 
+          Microly, QuiZon 10 herbicide, ATRAX herbicide, TEBSUL fungicide, Motive fungicide 
+          and more. Contact us at +91-8277650250 for product enquiries and dealership opportunities.
+        </p>
+        <ul>
+          <li>Water Soluble Fertilizers in Karnataka</li>
+          <li>NPK Fertilizers Supplier</li>
+          <li>Herbicides for Weed Control</li>
+          <li>Fungicides for Crop Protection</li>
+          <li>Agricultural Pesticides Products</li>
+          <li>Soil Conditioners for Farming</li>
+          <li>Best Fertilizer Company in Karnataka</li>
+          <li>Crop Nutrition Products India</li>
+        </ul>
+      </div>
+
       <style>{`
 
         * {
