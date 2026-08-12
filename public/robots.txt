@@ -3,11 +3,13 @@
 # https://www.daivapesticides.com/
 # ==========================================
 
-# Allow all search engines
+# Allow all search engines to crawl the public website
+
 User-agent: *
 Allow: /
 
-# Block sensitive directories (if any)
+# Block sensitive/private directories
+
 Disallow: /admin/
 Disallow: /private/
 Disallow: /api/
@@ -18,63 +20,18 @@ Disallow: /logs/
 Disallow: /tmp/
 Disallow: /backup/
 
-# Block tracking and analytics files
-Disallow: /*.json$
-Disallow: /*.xml$
-Disallow: /*.txt$
-Disallow: /*.log$
+# Allow public assets
 
-# Allow images to be indexed
 Allow: /assets/
 Allow: /images/
 Allow: /uploads/
 Allow: /logo.png
 Allow: /favicon.ico
 
-# Crawl delay (polite crawling)
-Crawl-delay: 5
-
 # ==========================================
-# SPECIFIC SEARCH ENGINES
+# AI CRAWLERS
 # ==========================================
 
-# Google
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 2
-
-# Google Images
-User-agent: Googlebot-Image
-Allow: /
-Allow: /assets/
-Allow: /images/
-
-# Bing
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 3
-
-# Yahoo
-User-agent: Slurp
-Allow: /
-Crawl-delay: 5
-
-# DuckDuckGo
-User-agent: DuckDuckBot
-Allow: /
-Crawl-delay: 5
-
-# Baidu (China)
-User-agent: Baiduspider
-Allow: /
-Crawl-delay: 5
-
-# Yandex (Russia)
-User-agent: YandexBot
-Allow: /
-Crawl-delay: 5
-
-# AI SEARCH ENGINES
 User-agent: GPTBot
 Allow: /
 
@@ -84,29 +41,17 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: Claude-Web
-Allow: /
-
 User-agent: PerplexityBot
 Allow: /
 
 User-agent: Google-Extended
 Allow: /
 
-User-agent: BingPreview
-Allow: /
-
 User-agent: Applebot
 Allow: /
 
-User-agent: Bytespider
-Allow: /
-
-User-agent: Amazonbot
-Allow: /
-
 # ==========================================
-# BLOCK BAD BOTS
+# BLOCK SELECTED SEO/CRAWLER BOTS
 # ==========================================
 
 User-agent: AhrefsBot
@@ -127,11 +72,8 @@ Disallow: /
 User-agent: spbot
 Disallow: /
 
-User-agent: UptimeRobot
-Disallow: /
-
 # ==========================================
-# SITEMAP LOCATION
+# SITEMAP
 # ==========================================
 
 Sitemap: https://www.daivapesticides.com/sitemap.xml
