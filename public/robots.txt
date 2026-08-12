@@ -1,3 +1,137 @@
-# https://www.robotstxt.org/robotstxt.html
+# ==========================================
+# ROBOTS.TXT - DAIVA PESTICIDES
+# https://www.daivapesticides.com/
+# ==========================================
+
+# Allow all search engines
 User-agent: *
-Disallow:
+Allow: /
+
+# Block sensitive directories (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /server/
+Disallow: /config/
+Disallow: /database/
+Disallow: /logs/
+Disallow: /tmp/
+Disallow: /backup/
+
+# Block tracking and analytics files
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Disallow: /*.log$
+
+# Allow images to be indexed
+Allow: /assets/
+Allow: /images/
+Allow: /uploads/
+Allow: /logo.png
+Allow: /favicon.ico
+
+# Crawl delay (polite crawling)
+Crawl-delay: 5
+
+# ==========================================
+# SPECIFIC SEARCH ENGINES
+# ==========================================
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 2
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /
+Allow: /assets/
+Allow: /images/
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 3
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+Crawl-delay: 5
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 5
+
+# Baidu (China)
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 5
+
+# Yandex (Russia)
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 5
+
+# AI SEARCH ENGINES
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# ==========================================
+# BLOCK BAD BOTS
+# ==========================================
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: spbot
+Disallow: /
+
+User-agent: UptimeRobot
+Disallow: /
+
+# ==========================================
+# SITEMAP LOCATION
+# ==========================================
+
+Sitemap: https://www.daivapesticides.com/sitemap.xml
